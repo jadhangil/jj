@@ -60,7 +60,7 @@ new TypeIt("#type1", {
   loop: true,
   waitUntilVisible: true,
 })
-  .type("Sun Of JESUS", { delay: 400 })
+  .type("Son Of JESUS", { delay: 400 })
   .pause(500)
   .delete(9)
   .type(" of YAHUVE", { delay: 400 })
@@ -73,7 +73,7 @@ new TypeIt("#type2", {
   loop: true,
   waitUntilVisible: true,
 })
-  .type("sun of JESUS", { delay: 400 })
+  .type("son of JESUS", { delay: 400 })
   .pause(500)
   .delete(9)
   .type(" of YAHUVE", { delay: 400 })
