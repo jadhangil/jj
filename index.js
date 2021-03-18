@@ -81,7 +81,6 @@ new TypeIt("#type2", {
   .delete(9)
   .go();
 
-
 gsap.from(".logo", { opacity: 0, duration: 1, delay: 0.5, y: -10 });
 gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 1, x: 20 });
 gsap.from(".banner", { opacity: 0, duration: 1, delay: 1.5, x: -200 });
