@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- AOS -->
     <link
       rel="stylesheet"
@@ -507,8 +508,7 @@
         </div>
         <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
           
-          <form class="form" action="https://m.me/jadhangil.pm.9"
-          method="POST">
+          <form class="form" id="submit-form" action="">
             <h2>Message me</h2>
             <div>
               <input type="text" placeholder="Name" name="_replyto"/>
@@ -522,22 +522,16 @@
             ></textarea>
 
 
-            <div class="popup" onclick="myFunction()">
+           
               <button type="submit">Send message</button>
-              <span class="popuptext" id="myPopup">Your message is not send...please send with messenger</span>
+            
             </div>
             </form>
         </div>
       </div>
     </section>
 
-    <script>
-      // When the user clicks on div, open the popup
-      function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-      </script>
+
 
     <!-- AOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
@@ -549,5 +543,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
     <!-- Custom Script -->
     <script src="index.js"></script>
+
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbyeMPXCux6HqffyMKYPYNHVbl1knt1AQ7xtyDUEgx5v3lXtFsJyDiQSA3llhFq1TvQY/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
   </body>
 </html>
