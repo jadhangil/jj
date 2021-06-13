@@ -63,7 +63,7 @@ new TypeIt("#type1", {
   .type("Son Of JESUS", { delay: 400 })
   .pause(500)
   .delete(9)
-  .type(" of YAHUVE", { delay: 400 })
+  .type(" of YAHWEH", { delay: 400 })
   .pause(500)
   .delete(9)
   .go();
@@ -76,7 +76,7 @@ new TypeIt("#type2", {
   .type("son of JESUS", { delay: 400 })
   .pause(500)
   .delete(9)
-  .type(" of YAHUVE", { delay: 400 })
+  .type(" of YAHWEH", { delay: 400 })
   .pause(500)
   .delete(9)
   .go();
