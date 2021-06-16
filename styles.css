@@ -1080,7 +1080,7 @@ textarea.input_c {
 
 .input-container_c.focus_c label {
   top: 0;
-  transform: translateY(-80%);
+  transform: translateY(-90%);
   left: 25px;
   font-size: 0.8rem;
 }
