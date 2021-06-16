@@ -1083,6 +1083,8 @@ textarea.input_c {
   transform: translateY(-90%);
   left: 25px;
   font-size: 0.8rem;
+  opacity: 0;
+  
 }
 
 .input-container_c.focus_c span:before,
